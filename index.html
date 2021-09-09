@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejemplo de tablas</title>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <table id="miTabla" border="1" cellspacing="1" cellpading="1">
+            <tr id="myRow">
+                <td>Modelo</td>
+                <td>Potencia</td>
+            </tr>
+            <tr>
+                <td>Ferrari 512 BB</td>
+                <td>380CV</td>
+            </tr>
+            <tr>
+                <td>Lamborghini Miura</td>
+                <td>385CV</td>
+            </tr>
+            <tr>
+                <td>Porsche 964 3.6</td>
+                <td>360CV</td>
+            </tr>
+        </table>
+        <br /><br />
+        <button onclick="insertarFila()">Crear Fila</button>
+        
+        <button onclick="insertarColumna()">Crear Columna</button>
+        <br /><br />
+        <form>
+            Modificación de los valores de la tabla <br />
+            <input type="button" id="botonBorder" value="Modificación del border" onclick="modificarBorder();" />
+            <br />
+            <input type="button" id="botonCellspacing" value="Modificación del cellspacing" onclick="modificarCellspacing();" />
+            <br />
+            <input type="button" id="botonPadding" value="Modificación del padding" onclick="modificarPadding();" />
+            <br />
+            <input type="button" id="botonCaption" value="Modificación del caption (titulo de la tabla)" onclick="modificarCaption();" />
+        </form>
+        <br /><br />
+        <form>
+            Añadir o Eliminar el trazo de delimitación de la  tabla <br />
+            <input type="button" id="botonEncima" value="Trazo por encima de la tabla" onclick="ponerTrazoEncima();" />
+            <br />
+            <input type="button" id="botondebajo" value="Trazo por debajo de la tabla" onclick="ponerTrazoDebajo();" />
+            <br />
+        </form>
+        <br /><br />
+        <form name="mostrar">
+            Formulario para mostrar celdas (Número de línea entre 0 y 3)<br />
+            <input type="text" id="numLinea1" value="" />
+            <br />
+            Número de columna (entre 0 y 1)<br />
+            <input type="text" id="numColumna1" value="" />
+            <br />
+            <input type="button" id="botonMostrarCelda" value="Botón que muestra una celda" onclick="mostrarCelda();" />
+            <br />
+        </form>
+        <form name="modificar">
+            Formulario para modificar celdas (Número de línea entre 0 y 3)<br />
+            <input type="text" id="numLinea2" value="" />
+            <br />
+            Número de columna (entre 0 y 1)<br />
+            <input type="text" id="numColumna2" value="" />
+            <br />
+            <input type="button" id="botonMostrarCelda" value="Botón que modifica una celda" onclick="modificarCelda();" />
+            <br />
+        </form>
+    </body>
+</html>
